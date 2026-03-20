@@ -56,6 +56,7 @@ function Controls({ settings, setSettings }) {
           <MenuItem value="Дизайнер">🎨 Дизайнер</MenuItem>
           <MenuItem value="Тестировщик">🧪 Тестировщик</MenuItem>
           <MenuItem value="Менеджер">📋 Менеджер</MenuItem>
+          <MenuItem value="Аналитик">📊 Аналитик</MenuItem>
         </Select>
       </FormControl>
 
