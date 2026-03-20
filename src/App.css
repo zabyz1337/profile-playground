@@ -108,6 +108,35 @@
   animation: pulseAlert 1.8s infinite;
 }
 
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.name-row {
+  display: flex;
+  gap: 14px;
+}
+
+.control-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.control-label {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.radio-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+
 @keyframes pulseAlert {
   0% {
     opacity: 1;
@@ -117,5 +146,20 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .panel {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .name-row {
+    flex-direction: column;
   }
 }
